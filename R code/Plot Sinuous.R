@@ -47,7 +47,7 @@ lines(Xm, yhat.bnp, col = cols[2], lwd=4)
 
 ## true
 Wtrue <- rlnorm(1, 0, sd=sqrt(2))
-ytrue <- 5*sin(pi*(Xm-10)/10)/(1+2*((Xm-10)/5)^2*(sign((Xm-10)/5)+1))+4+1*log(0.9860536)
+ytrue <- 5*sin(pi*(Xm-10)/10)/(1+2*((Xm-10)/5)^2*(sign((Xm-10)/5)+1))+4+1*log(Wtrue)
 lines(Xm, ytrue, lwd = 4, col=cols[3])
 
 
@@ -95,7 +95,7 @@ lines(Xm, yhat.bnp, col = cols[2], lwd=4)
 
 ## true
 Wtrue <- rlnorm(1, 0, sd=sqrt(2))
-ytrue <- 5*sin(pi*(Xm-10)/10)/(1+2*((Xm-10)/5)^2*(sign((Xm-10)/5)+1))+4+1*log(1.067025)
+ytrue <- 5*sin(pi*(Xm-10)/10)/(1+2*((Xm-10)/5)^2*(sign((Xm-10)/5)+1))+4+1*log(Wtrue)
 lines(Xm, ytrue, lwd = 4, col=cols[3])
 
 
