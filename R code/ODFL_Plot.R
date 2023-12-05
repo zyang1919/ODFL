@@ -16,7 +16,7 @@ rst <- get(load(paste(dir_rst, "Rst.50sz.NB.BP.Qua.200sim.RData", sep = '/')))
 rst.bnp <- get(load(paste(dir_rst, "Rst.50sz.NB.Qua.BNP.200sim.RData", sep = '/')))
 
 
-## using first data set 
+## using second data set 
 Y <- Yall_50[[2]]
 Z_all <- Zall_50[[2]]
 Xm <- Xmall_50[[2]]
@@ -48,7 +48,7 @@ lines(Xm, yhat.bnp, col = "#80FF80", lwd=4)
 
 ## true line
 Wtrue <- rlnorm(1, 0, sqrt(2))
-ytrue <- 5 - 0.01*Xm - 0.05*(Xm)^2 + 1*log(1.159495)
+ytrue <- 5 - 0.01*Xm - 0.05*(Xm)^2 + 1*log(Wtrue)
 lines(Xm, ytrue, lwd = 4, col="#8080FF")
 
 
@@ -99,7 +99,7 @@ lines(Xm, yhat.bnp, col = "#80FF80", lwd=4)
 
 ## true line
 Wtrue <- rlnorm(1, 0, sqrt(2))
-ytrue <- 5 - 0.01*Xm - 0.05*(Xm)^2 + 1*log(1.502527)
+ytrue <- 5 - 0.01*Xm - 0.05*(Xm)^2 + 1*log(Wtrue)
 lines(Xm, ytrue, lwd = 4, col="#8080FF")
 
 
